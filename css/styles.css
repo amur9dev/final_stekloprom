@@ -1,4 +1,15 @@
 :root {
+}
+
+.contact-card__icon--phone,
+.contact-card__icon--address,
+.contact-card__icon--email,
+.contact-card__icon--schedule,
+.contact-card__icon--telegram,
+.contact-card__icon--whatsapp,
+.contact-card__icon--max,
+
+:root {
   /* Core color tokens */
   --color-brand: #00407e;
   --color-brand-dark: #003366;
@@ -193,8 +204,8 @@ ul {
   height: 24px;
   display: inline-block;
   border-radius: 6px;
-  background: rgba(255, 255, 255, 0.2);
-  border: 1px dashed rgba(255, 255, 255, 0.6);
+  /* background: rgba(255, 255, 255, 0.2);
+  border: 1px dashed rgba(255, 255, 255, 0.6); */
   flex-shrink: 0;
 }
 
@@ -2881,7 +2892,7 @@ ul {
 }
 
 .catalogDetail__priceCard--popular::before {
-  content: 'Популярный';
+  content: 'РџРѕРїСѓР»СЏСЂРЅС‹Р№';
   position: absolute;
   top: -12px;
   left: 50%;
@@ -5427,10 +5438,11 @@ ul {
   }
 
   .contact-card__icon {
-    width: 44px;
-    height: 44px;
+    width: 42px;
+    height: 42px;
     border-radius: 13px;
-    flex-basis: 44px;
+    box-shadow: 0 6px 12px rgba(17, 24, 39, 0.08);
+    flex: 0 0 42px;
   }
 
   .contact-card__label { font-size: 17px; margin-bottom: 4px; }
@@ -5515,7 +5527,8 @@ ul {
     width: 42px;
     height: 42px;
     border-radius: 13px;
-    flex-basis: 42px;
+    box-shadow: 0 6px 12px rgba(17, 24, 39, 0.08);
+    flex: 0 0 42px;
   }
 
   .contact-card__label {
